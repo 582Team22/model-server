@@ -1,0 +1,24 @@
+services:
+  nginx-rtmp:
+    image: alfg/nginx-rtmp
+    container_name: nginx-rtmp
+    ports:
+      - "1935:1935"    # RTMP stream port (1935 inside container → 1935 on host)
+    restart: unless-stopped
+
+  object-detection:
+    build: ./app
+    container_name: object-detection
+    ports:
+      - "5001:5001"    # Flask app
+    restart: unless-stopped
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=all
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - capabilities: [gpu]
+    depends_on:
+      - nginx-rtmp
+

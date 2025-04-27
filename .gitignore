@@ -1,0 +1,20 @@
+# Ignore virtual environment
+venv/
+
+# Ignore model weights
+*.pt
+
+# Ignore Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore pip cache and build artifacts
+*.whl
+*.egg-info/
+dist/
+build/
+
+# Docker files
+*.log
