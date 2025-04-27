@@ -69,7 +69,7 @@ Stream to: rtmp://<EC2-IP>:1935/stream Stream key: drone_feed View detections: h
 5. View detections
    Open your browser:
    `http://<your-ec2-ip>:5001/video_feed`
-   - Watch real-time object detections rendered with bounding boxes.
+   Watch real-time object detections rendered with bounding boxes.
 
 --
 
