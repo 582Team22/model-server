@@ -81,7 +81,7 @@ streaming-ml-server/
 │   ├── app.py           # Flask server for YOLOv5 inference
 │   ├── Dockerfile       # Flask app container
 │   ├── requirements.txt # Python dependencies
-│   └── models/          # YOLOv5s weights (downloaded automatically)
+│   └── yolov5s.pt          # YOLOv5s weights (downloaded automatically)
 │
 ├── docker-compose.yml    # Orchestration of nginx-rtmp + Flask containers
 └── README.md             # Project documentation
