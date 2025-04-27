@@ -46,30 +46,30 @@ Stream to: rtmp://<EC2-IP>:1935/stream Stream key: drone_feed View detections: h
   ```
 
 2. Configure the environment
-   Make sure you have:
-   - NVIDIA drivers installed
-   - Docker and NVIDIA Container Toolkit installed
-   - EC2 security groups allowing ports:
-       - `1935` (RTMP input)
-       - `5001` (Flask web server)
+Make sure you have:
+- NVIDIA drivers installed
+- Docker and NVIDIA Container Toolkit installed
+- EC2 security groups allowing ports:
+   - `1935` (RTMP input)
+   - `5001` (Flask web server)
 
 3. Build and start the services
-   ```
-   docker compose build --no-cache
-   docker compose up -d
-   ```
-   - Use `-d` to run containers detached in the background
+```
+docker compose build --no-cache
+docker compose up -d
+```
+- Use `-d` to run containers detached in the background
 
 4. Stream video from OBS
-   In OBS Settings:
-     - Server: `rtmp://<your-ec2-ip>:1935/stream`
-     - Stream Key: `drone_feed`
-   Start streaming.
+In OBS Settings:
+ - Server: `rtmp://<your-ec2-ip>:1935/stream`
+ - Stream Key: `drone_feed`
+Start streaming.
 
 5. View detections
-   Open your browser:
-   `http://<your-ec2-ip>:5001/video_feed`
-   Watch real-time object detections rendered with bounding boxes.
+Open your browser:
+`http://<your-ec2-ip>:5001/video_feed`
+Watch real-time object detections rendered with bounding boxes.
 
 --
 
