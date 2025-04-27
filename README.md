@@ -4,7 +4,6 @@ This project implements a fully containerized real-time object detection system 
 It uses Docker Compose to orchestrate an nginx-rtmp streaming server and a Flask-based YOLOv5 inference server.
 
 
-
 ## 📸 Live Demo
 
 - OBS streams video to the RTMP server
@@ -12,8 +11,9 @@ It uses Docker Compose to orchestrate an nginx-rtmp streaming server and a Flask
 - Flask server streams processed frames back to the browser
 
 Example access:
-Stream to: rtmp://<EC2-IP>:1935/stream Stream key: drone_feed View detections: http://<EC2-IP>:5001/video_feed
-
+Stream to: `rtmp://<EC2-IP>:1935/stream`
+Stream key:` drone_feed`
+View detections: `http://<EC2-IP>:5001/video_feed`
 
 
 ## 📦 Architecture
@@ -26,7 +26,6 @@ Stream to: rtmp://<EC2-IP>:1935/stream Stream key: drone_feed View detections: h
 - Docker: Manages containers with GPU support (NVIDIA runtime)
 
 
-
 ## 🛠️ Technologies Used
 - AWS EC2 g4dn.xlarge (Tesla T4 GPU)
 - Docker with NVIDIA Container Toolkit
@@ -35,7 +34,6 @@ Stream to: rtmp://<EC2-IP>:1935/stream Stream key: drone_feed View detections: h
 - YOLOv5s w/ COCO weights
 - OBS Studio for video input
 - Python 3.10
-
 
 
 ## 🚀 Setup Instructions
@@ -70,7 +68,6 @@ Start streaming.
 Open your browser:
 `http://<your-ec2-ip>:5001/video_feed`
 Watch real-time object detections rendered with bounding boxes.
-
 
 
 ## 📋 Project Structure
