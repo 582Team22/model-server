@@ -65,9 +65,9 @@ In OBS Settings:
 Start streaming.
 
 5. View detections
-Open your browser:
-`http://<your-ec2-ip>:5001/video_feed`
-Watch real-time object detections rendered with bounding boxes.
+- Open your browser:
+- `http://<your-ec2-ip>:5001/video_feed`
+- Watch real-time object detections rendered with bounding boxes.
 
 
 ## 📋 Project Structure
