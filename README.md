@@ -11,9 +11,9 @@ It uses Docker Compose to orchestrate an nginx-rtmp streaming server and a Flask
 - Flask server streams processed frames back to the browser
 
 Example access:
-Stream to: `rtmp://<EC2-IP>:1935/stream`
-Stream key:` drone_feed`
-View detections: `http://<EC2-IP>:5001/video_feed`
+- Stream to: `rtmp://<EC2-IP>:1935/stream`
+- Stream key:` drone_feed`
+- View detections: `http://<EC2-IP>:5001/video_feed`
 
 
 ## 📦 Architecture
