@@ -1,3 +1,10 @@
+"""
+Author: Drew Meyer
+File: app.py
+Purpose: Module for a Flask app used to process a live
+camera stream and compute object detection inference
+"""
+
 from flask import Flask, Response
 import numpy as np
 import os
